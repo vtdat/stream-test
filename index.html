@@ -15,7 +15,7 @@
 	<canvas id="videoCanvas" width="640" height="480"> </canvas>
 	<script src="public/jsmpg.js"></script>
 	<script type="text/javascript">
-	var client = new WebSocket( 'ws://127.0.0.1:8084/12345' );
+	var client = new WebSocket( 'ws://127.0.0.1:8084' );
 	var player = new jsmpeg(client, {canvas:document.getElementById('videoCanvas')});
 	</script>
 </body>
