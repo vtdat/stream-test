@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "express-server": "node index.js",
-    "streaming-server": "node stream.js 12345",
-    "mac": "ffmpeg -f avfoundation -video_size 1280x720 -framerate 30 -pix_fmt uyvy422 -i 'default' -maxrate 3000k -bufsize 4000k -f mpeg1video -framerate 30 http://localhost:8082/12345/1280/720"
+    "mac": "ffmpeg -f avfoundation -video_size 640x480 -framerate 30 -pix_fmt uyvy422 -i '0':'0' -maxrate 3000k -bufsize 4000k -f mpeg1video -framerate 30 http://localhost:8082/12345/640/480"
   },
   "author": "Minh",
   "license": "ISC",
